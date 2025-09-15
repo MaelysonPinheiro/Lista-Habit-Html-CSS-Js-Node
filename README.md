@@ -32,9 +32,7 @@ A aplicação usa **Node.js + Express** no back-end e **MySQL** como banco de da
 \`\`\`bash
 📦 MyMental
 ├── 📁 public            # Arquivos estáticos (HTML, CSS, JS do front-end)
-├── 📁 routes            # (separação de rotas, se usada)
-├── 📁 views             # (se usar template engine opcional)
-├── 📁 database          # Script ou config do banco de dados
+├── 📁 views             
 ├── 📄 server.js         # Arquivo principal do servidor
 ├── 📄 package.json
 ├── 📄 README.md
@@ -70,7 +68,6 @@ CREATE TABLE habits (
     user_id INT NOT NULL,
     habit VARCHAR(255) NOT NULL,
     created_at DATE NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(id)
 );
 \`\`\`
 
@@ -80,8 +77,8 @@ CREATE TABLE habits (
 
 1. **Clone o repositório**
 \`\`\`bash
-git clone https://github.com/seuusuario/MyMental.git
-cd MyMental
+git clone https://github.com/seuusuario/Lista-Habit-Html-CSS-Js-Node.git
+cd Lista-Habit-Html-CSS-Js-Node
 \`\`\`
 
 2. **Instale as dependências**
@@ -106,10 +103,6 @@ http://localhost:3000
 
 ---
 
-## 📸 Prints (opcional)
-Adicione aqui capturas de tela do projeto funcionando para deixar o repositório mais atrativo.
-
----
 
 ## 📌 Possíveis melhorias futuras
 
