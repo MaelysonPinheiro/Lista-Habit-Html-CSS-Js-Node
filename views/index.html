@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section id="nav">
+        <ul>
+            <li id="user-menu">
+                <button id="user-button">Carregando...</button>
+                <div id="user-dropdown" class="dropdown-content">
+                    <a href="login.html" id="logout-link">Logout</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section id="input">
+        <h1>Digite seus habitos:</h1>
+        <form id="listaForm">
+            <input type="text" id="listaHabitInput" placeholder="Digite um Habito" required>
+            <button type="submit" id="btt-index">Cadastrar</button>
+        </form>
+        <ul id="listaHabit">
+
+        </ul>
+    </section>
+
+    <script src="index.js"></script>
+</body>
+</html>

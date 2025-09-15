@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-color: antiquewhite;
+}
+#login, #register{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 20%;
+    margin: auto auto;
+    margin-top: 8%;
+    background-color: rgb(255, 197, 121);
+    padding: 5vw;
+    border-radius: 1vw;
+}
+#login h1, #register h1{
+    text-align: center;
+    margin: 1vw;
+}
+#login p, #register p{
+    margin: 0.3vw;
+}
+#login input, #register input{
+    margin: 0.2vw;
+    margin-bottom: 1vw;
+    border: none;
+    border-radius: 1vw;
+    padding: 0.5vw;
+}
+#login button, #btt-register1{
+    width: 10vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+#login button:hover, #btt-register1:hover{
+    transition: 0.7s;
+    background-color: rgb(253, 155, 27);
+    color: white;
+}
+#btt-register{
+    margin-top: 2vw;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    text-align: center;
+}
+#btt-register:hover{
+    transition: 0.7s;
+    color: rgb(255, 255, 255);
+}
+#nav{
+    display: flex;
+    justify-content: end;
+    padding: 2vw;
+}
+#user-button{
+    padding: 0.5vw;
+    border: none;
+    border-radius: 0.5vw;
+    background-color: rgb(179, 179, 179);
+    cursor: pointer;
+}
+#user-button:hover{
+    transition: 0.7s;
+    background-color: rgb(127, 204, 255);
+}
+#input{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30vw;
+    margin: auto;
+    margin-top: 5vw;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#input input{
+    margin-top: 1.5vw;
+    border: none;
+    background-color: rgb(202, 202, 202);
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    color: white;
+}
+#input button{
+    width: 8vw;
+    margin: auto;
+    margin-top: 1vw;
+    border: none;
+    border-radius: 1vw;
+    padding: 0.5vw;
+    cursor: pointer;
+}
+#input button:hover{
+    transition: 0.7s;
+    background-color: rgb(0, 182, 0);
+    color: white;
+}
+#user-menu{
+    list-style: none;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 6%;
+  background-color: #007bff;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: 1;
+  min-width: 150px; 
+}
+.dropdown-content a {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+#user-menu.show .dropdown-content {
+  display: block;
+}
+.lista-item{
+    text-align: center;
+    list-style: none;
+}
+.delete-habit{
+    width: 2%;
+}
